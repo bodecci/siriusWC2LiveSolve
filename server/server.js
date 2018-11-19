@@ -6,7 +6,7 @@ const bodyParser = require( 'body-parser' );
 app.use( express.static( './server/public' ) );
 app.use( bodyParser.urlencoded( { extended: true } ) );
 // globals
-const port = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 let history = [];
 // spin up server
 app.listen( port, ()=>{
